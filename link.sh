@@ -12,3 +12,8 @@ rm ~/.config/compton.conf
 ln -s ~/.dotfiles/compton.conf ~/.config/compton.conf
 rm ~/.i3blocks.conf
 ln -s ~/.dotfiles/.i3blocks.conf ~/.i3blocks.conf
+rm ~/.config/termite/config
+mkdir -p ~/.config/termite
+ln -s ~/.dotfiles/termite.config ~/.config/termite/config
+rm ~/.tmux.conf
+ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
