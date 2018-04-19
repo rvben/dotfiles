@@ -38,17 +38,26 @@ set $up     l
 set $right  semicolon
 
 # define names for workspaces
-set $ws1    "1:1: " 
+set $ws1    "1:1:   " 
 #set $ws1    "1:   Terminal "
-set $ws2    "2:   Code "
-set $ws3    "3:   Chromium "
-set $ws4    "4:   Files "
-set $ws5    "5:   Documents "
-set $ws6    "6:   Media "
-set $ws7    "7:   Design "
-set $ws8    "8:   Chat "
-set $ws9    "9:   General "
-set $ws10   "10:   Settings "
+set $ws2    "2:2:   "
+set $ws3    "3:3:   "
+set $ws4    "4:4:   "
+set $ws5    "5:5:   "
+set $ws6    "6:6:   "
+set $ws7    "7:7:   "
+set $ws8    "8:8:   "
+set $ws9    "9:9:   "
+set $ws10   "10:10:   "
+#set $ws2    "2:   Code "
+#set $ws3    "3:   Chromium "
+#set $ws4    "4:   Files "
+#set $ws5    "5:   Documents "
+#set $ws6    "6:   Media "
+#set $ws7    "7:   Design "
+#set $ws8    "8:   Chat "
+#set $ws9    "9:   General "
+#set $ws10   "10:   Settings "
 
 # use $mod+Mouse to drag floating windows to their wanted position
 floating_modifier $mod
@@ -270,7 +279,7 @@ bar {
     status_command          i3blocks
     bindsym button4         nop
     bindsym button5         nop
-    position                bottom
+    position                top
     tray_output             primary
     separator_symbol        "·"
     workspace_buttons       yes
