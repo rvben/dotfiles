@@ -3,7 +3,7 @@ set $mod Mod1
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:monospace 8
-font pango:Hack 9
+font pango:Hack 9:Font Awesome 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -76,7 +76,7 @@ hide_edge_borders none
 popup_during_fullscreen smart
 
 # assign program to workspace
-assign [class="terminal"]           → $ws1
+# assign [class="terminal"]           → $ws1
 assign [class="Chromium"]           → $ws3
 assign [class="Firefox"]            → $ws3
 assign [class="Telegram"]           → $ws8
@@ -258,7 +258,7 @@ mode "  " {
 
 
 # set specific windows to floating mode
-for_window [window_role="app"]                      floating enable
+#for_window [window_role="app"]                      floating enable
 for_window [window_role="pop-up"]                   floating enable
 for_window [window_role="task_dialog"]              floating enable
 for_window [title="Preferences$"]                   floating enable
@@ -280,7 +280,7 @@ bar {
     bindsym button4         nop
     bindsym button5         nop
     position                top
-    tray_output             primary
+#    tray_output             primary
     separator_symbol        "·"
     workspace_buttons       yes
     strip_workspace_numbers yes
@@ -298,9 +298,11 @@ bar {
 }
 
 exec --no-startup-id xautolock -time 10 -locker "i3lock-fancy -f Source-Sans-Pro"
+exec nitrogen --restore &
 exec --no-startup-id nm-applet
 exec --no-startup-id mate-volume-control-applet
-exec --no-startup-id compton --config ~/.config/compton/compton.conf
+exec --no-startup-id compton -b
+exec --no-startup-id pcmanfm -d 
 
 # Run mate-settings-daemon for gnome-keyring
 # gnome-keyring-daemon is handled by ~/.profile
@@ -308,3 +310,4 @@ exec --no-startup-id /usr/lib/mate-settings-daemon/mate-settings-daemon
 
 # Notifications
 exec dunst
+#exec compton -b

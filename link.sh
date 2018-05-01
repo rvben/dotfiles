@@ -1,3 +1,4 @@
+mkdir -p ~/.i3/
 rm ~/.i3/config
 ln -s ~/.dotfiles/config.i3 ~/.i3/config
 rm ~/.Xresources
