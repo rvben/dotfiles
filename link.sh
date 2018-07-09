@@ -1,4 +1,4 @@
-mkdir -p ~/.i3/
+mkdir -p ~/.i3/ ~/.config/xfce4/terminal
 rm ~/.i3/config
 ln -s ~/.dotfiles/config.i3 ~/.i3/config
 rm ~/.Xresources
