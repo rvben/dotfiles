@@ -53,4 +53,3 @@ URxvt*italicFont: xft:inconsolata:size=14:antialias=true:hinting=true
 URxvt*bolditalicFont: xft:inconsolata:size=14:antialias=true:hinting=true
 
 URxvt*perl-ext-common: font-size
-

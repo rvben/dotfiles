@@ -39,7 +39,6 @@ set $right  semicolon
 
 # define names for workspaces
 set $ws1    "1:1:   " 
-#set $ws1    "1:   Terminal "
 set $ws2    "2:2:   "
 set $ws3    "3:3:   "
 set $ws4    "4:4:   "
@@ -49,6 +48,7 @@ set $ws7    "7:7:   "
 set $ws8    "8:8:   "
 set $ws9    "9:9:   "
 set $ws10   "10:10:   "
+#set $ws1    "1:   Terminal "
 #set $ws2    "2:   Code "
 #set $ws3    "3:   Chromium "
 #set $ws4    "4:   Files "
@@ -302,7 +302,7 @@ exec nitrogen --restore &
 exec --no-startup-id nm-applet
 exec --no-startup-id mate-volume-control-applet
 exec --no-startup-id compton -b
-exec --no-startup-id pcmanfm -d 
+exec --no-startup-id pcmanfm -d
 
 # Run mate-settings-daemon for gnome-keyring
 # gnome-keyring-daemon is handled by ~/.profile
