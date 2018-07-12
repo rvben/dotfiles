@@ -26,7 +26,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec dmenu_run
 
 # switching window with win+tab
 bindsym $mod+Tab exec --no-startup-id rofi -show window
@@ -38,7 +38,7 @@ set $up     l
 set $right  semicolon
 
 # define names for workspaces
-set $ws1    "1:1:   " 
+set $ws1    "1:1:   "
 set $ws2    "2:2:   "
 set $ws3    "3:3:   "
 set $ws4    "4:4:   "
